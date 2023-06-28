@@ -1,0 +1,23 @@
+{{#each articles}}
+    {{#if this.publish}}
+        <setcion class="article">
+            <h3><a href="{{../backUrl}}">←Go back</a></h3>
+            <br />
+
+            {{#with this}}
+                <h2 class="article-title">
+                    {{key}}{{title}}
+                </h2>
+                <h3 class="article-subTitle">
+                    {{subTitle}}
+                </h3>
+                <h4 class="article-date">
+                    {{date}}
+                </h4>
+                <p class="article-content">
+                    {{content}}
+                </p>
+            {{/with}}
+        </setcion>
+    {{/if}}
+{{/each}}
